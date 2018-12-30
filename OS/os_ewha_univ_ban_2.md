@@ -127,8 +127,6 @@ I/O 가 시작된 후 입출력 작업이 끝나기를 기다리지 않고 제�
 
 두 경우 모두 I/O 완료는 Interrupt로 알려줌.
 
-** 동기식과 비동식을 비교할 때 동기식 구현 방법 2에서 
-
 ***
 ### DMA(Direct Memory Access)
 메모리 접근할 수 있는 장치는 CPU밖에 없었으나, local buffer에서 copy 또는 Memory 에 있는 data를 local buffer로 이동시에도 interrupt가 발생하는데 이게 너무 많아서 CPU에게 과부하가 되고 overhead가 발생하게 된다. 이를 해결하기 위해 DMA controller를 붙여서, DMA controller도 memory에 접근하여, 작은 일들을 DMA에 (특정크기, 블럭, 페이지 not byte)가 쌓이면 DMA가 메모리에 카피 후 어느정도 블럭에 해당하는 I/O가 쌓이면 CPU에게 알려줌. 그러면 CPU가 Interrupt 당하는 빈도가 적어짐.  
