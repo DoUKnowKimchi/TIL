@@ -129,11 +129,12 @@ OS 사용 목적 : `자원을 효율적으로 관리` + `컴퓨터를 편리하�
 다중사용, 다중 사용자, 시분할 방식
 ***
 ## 몇가지 용어
-`Multitasking` : Task가 여러개 돌아가는것. CPU에서 하나의 작업이 이루어지나, 분할하여 실행하기 때문에 동시에 작동되는 것 처럼 보이는 것  
+`MultiTasking` : Task가 여러개 돌아가는것. CPU에서 하나의 작업이 이루어지나, 분할하여 실행하기 때문에 동시에 작동되는 것 처럼 보이는 것  
 
-`Multiprogramming` : Memory에 여러 프로그램이 동시에 올라가는 것. Multasking이 되려면 MultiProgramming이 들어가야하나, 메모리에 조금 더 집중해주는 역할  
+`MultiProgramming` : Memory에 여러 프로그램이 동시에 올라가는 것. MultiTasking이 되려면 MultiProgramming이 들어가야하나, 메모리에 조금 더 집중해주는 역할  
 
 `Time sharing` : CPU를 더 강조한 측면.  
+
 `MultiProcessor`  : 하나의 컴퓨터에 CPU가 여러개 붙어 있음을 의미
 Processor : 처리기, CPU
 ***

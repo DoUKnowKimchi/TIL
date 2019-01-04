@@ -45,8 +45,8 @@ Interupt Exception 발생 시 하드웨어가 mode bit을 0으로 바꿈
 ***
 Timer : 특정 프로그램이 CPU 독점을 막기 위해 OS가 사용자 프로그램에게 CPU를 넘겨줄 때 타이머에 특정 값을 할당, 이게 끝나서 0 이 되면 Interupt를 걸어 CPU를 뺏게 sth을 한다.
 ***
-Device Controller
-I/o Device controller : 해당 I/O 장치유형을 관리하는 일종의 작은 CPU  
+Device Controller  
+I/O Device controller : 해당 I/O 장치유형을 관리하는 일종의 작은 CPU  
 제어 정보를 위해 control register, status register 를 가짐  
 local buffer를 가짐(일종의 data register)
 
@@ -55,6 +55,7 @@ I/O는 실제 device와 local buffer 사이에서 일어남
 Device controller는 I/O가 끝날 경우 Interrupt로 CPU에 사실을 알림.
 
 `device driver(장치구동기)` : OS 코드 중 각 장치별 처리루틴(SOFTWARE)  
+
 `device controller(장치제어기)` : 각 장치를 통제하는 일종의 작은 CPU(HARDWARE)
 
 
@@ -83,7 +84,8 @@ OS는 올바른 요청인지 확인하고, 권한 등을 확인 한후 올바른
 그래서 현대의 운영체제는 Interrupt에 의해 구동된다고 이야기 한다.
 
 `인터럽트 벡터` : 해당 인터럽트의 처리 루틴 주소를 가지고 있음  
-`인터럽트 처리 루틴(Interrupt Service Routine, 이넡럽트 핸들러) `: 해당 인터럽트를 처리하는 커널 함수
+
+`인터럽트 처리 루틴(Interrupt Service Routine, Interrupt Handler) `: 해당 인터럽트를 처리하는 커널 함수
 ***
 CPU는 매순간 메모리에 위치한 기계어(인스트럭션)를 읽어서 실행하는데, 그 주소는 Program Counter(PC)라는 레지스터에서 확인하여 실행한다. PC 는 주로 4Byte로, 증가시 4Byte 증가.
 

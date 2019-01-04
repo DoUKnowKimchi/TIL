@@ -67,7 +67,6 @@ Process Control Block(PCB)
 ***
 ## 문맥 교환(Context Switch) **
 ![문맥 교환](/img/context_switch.png)  
-
 짧은 시간 간격으로 CPU를 번갈아 가며 씀. CPU를 뺏길 때 문맥을 기억했다가 다시 얻었을 때 그 문맥 이후 부터 작업.
 
 Register에 있는 값과 PC 의 값, Memory map을 프로세스 PCB에 Save 함
