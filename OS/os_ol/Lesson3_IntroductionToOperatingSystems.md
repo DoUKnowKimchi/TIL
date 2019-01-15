@@ -37,7 +37,7 @@
 
 
     An operating system is a layer of systems software that:
-
+    
     - directly has privileged access to the underlying hardware;
     - hides the hardware complexity
     - manages hardware on behalf of one of more applications acording to some predefined policies
